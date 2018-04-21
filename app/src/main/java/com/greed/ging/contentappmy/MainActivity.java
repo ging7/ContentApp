@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 ContactsContract.Contacts.DISPLAY_NAME,
                 Phone.NUMBER};
         Cursor cursor = resolver.query(
-                ContactsContract.Contacts.CONTENT_URI,
-                null,
+                Phone.CONTENT_URI,
+                projection,
                 null,
                 null,
                 null);
